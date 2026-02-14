@@ -11,28 +11,351 @@
 
 <body>
     <header>
-        <img src="./svg/logos_with_letter.svg" alt="Logo">
-        <div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#how-it-works">How it works</a></li>
-                <li><a href="#what-we-do">What we do</a></li>
-                <li><a href="#who-we-help">Who we help</a></li>
-                <li><a href="#home">Resources</a></li>
-                <button>Login</button>
-            </ul>
-        </div>
-        <button>Talk to an Expert</button>
+        <nav class=" flex items-center justify-between px-6 py-5 max-w-[1320px] mx-auto font-sans">
+            <div class="flex-shrink-0">
+                <img src="./svg/logos_with_letter.svg" alt="Logo" class="h-10 w-auto">
+            </div>
+
+            <div class="hidden lg:flex items-center">
+                <ul class="flex items-center gap-8 text-[17px] font-medium text-gray-800">
+                    <li><a href="#home" class="hover:text-black transition-colors">Home</a></li>
+                    <li><a href="#how-it-works" class="hover:text-black transition-colors">How it works</a></li>
+                    <li><a href="#what-we-do" class="hover:text-black transition-colors">What we do</a></li>
+                    <li><a href="#who-we-help" class="hover:text-black transition-colors">Who we help</a></li>
+                    <li><a href="#home" class="hover:text-black transition-colors">Resources</a></li>
+
+                    <button
+                        class="ml-4 px-7 py-2.5 border border-gray-400 rounded-full font-semibold hover:bg-gray-50 transition-all">
+                        Login
+                    </button>
+                </ul>
+            </div>
+
+            <div class="flex items-center">
+                <button
+                    class="bg-black text-white px-8 py-3.5 rounded-full font-bold text-base hover:bg-gray-800 transition-all shadow-sm">
+                    Talk to an Expert
+                </button>
+            </div>
+        </nav>
     </header>
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer>
+        <section
+            class="max-w-[1320px] mx-auto px-6 py-12 md:py-24 flex flex-col lg:flex-row items-center justify-between gap-12">
 
-    </footer>
+            <div class="flex-1 space-y-8 text-center lg:text-left">
+                <h1 class="text-5xl md:text-7xl lg:text-[85px] font-bold leading-[1.05] tracking-tight text-gray-900">
+                    Get your <br class="hidden md:block"> finances right
+                </h1>
+
+                <p class="text-lg md:text-xl text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                    Get your finances right with Accountancy Cloud. We offer the best accounting, R&D credits and CFO
+                    services for ambitious businesses who want to grow.
+                </p>
+
+                <div class="pt-4 space-y-6">
+                    <p class="font-bold text-lg text-gray-900">Switching to us is simple</p>
+                    <button
+                        class="bg-black text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 shadow-lg">
+                        Talk to us
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex-1 relative w-full max-w-2xl lg:max-w-none">
+                <div class="relative z-10">
+                    <img src="./images/dashboard.png" alt="Dashboard UI" class="w-full h-auto drop-shadow-2xl">
+                </div>
+            </div>
+        </section>
+        <section class="max-w-[1320px] mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-16">
+
+            <div class="flex-1 flex justify-center md:justify-start">
+                <div class="relative w-full max-w-[400px]">
+                    <img src="./images/70_discount.png" alt="70 percent" class="w-full h-auto">
+                </div>
+            </div>
+
+            <div class="flex-1 space-y-6">
+                <h2 class="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight text-gray-900">
+                    The best finance stack for entrepreneurs
+                </h2>
+
+                <div class="space-y-4">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        70% of companies switch to us from their DIY or legacy system. Now, get your bookkeeping, tax
+                        prep and CFO problems, solved.
+                        Complete our
+                        <a href="#"
+                            class="text-blue-600 underline decoration-1 underline-offset-4 hover:text-blue-800 transition-colors">
+                            contact form
+                        </a>,
+                        and find out why 9 out of 10 customers recommend us.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="max-w-[1320px] mx-auto px-6 py-24">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-20">Why Switch?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+
+                <div class="space-y-6">
+                    <div class="h-32 flex items-center">
+                        <img src="./images/software.png" alt="Software" class="h-full w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Powerful software</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Included in our service, each customer gets in-house software to access live
+                        <a href="#" class="text-blue-500 underline underline-offset-4">financial dashboards</a>
+                        and real-time management reports.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="h-32 flex items-center">
+                        <img src="./images/cashflow.png" alt="Cashflow" class="h-full w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Track cashflow</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Stay on top of your working capital,
+                        <a href="#" class="text-blue-500 underline underline-offset-4">taxes</a>,
+                        and cashflow, to ensure your business is performing at its best.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="h-32 flex items-center">
+                        <img src="./images/winning_support.png" alt="Support" class="h-full w-auto">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Award winning support</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Expect the best from us. Get a dedicated finance team that will handle all your accounting, R&D
+                        credits and CFO needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-20">
+                <button
+                    class="bg-[#f3b5ba] text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ef9da5] transition-colors">
+                    Discover what we do
+                </button>
+            </div>
+        </section>
+        <section class="bg-[#fdf2f2] py-24">
+            <div class="max-w-[1320px] mx-auto px-6">
+
+                <h2 class="text-5xl md:text-[64px] font-bold text-gray-900 mb-20 leading-tight">
+                    Plans built for growth
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16 items-end">
+
+                    <div class="space-y-8">
+                        <div class="flex items-end h-32">
+                            <img src="./images/rocket-small.png" alt="Small rocket">
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Early stage startup</h3>
+                            <p class="text-gray-700 leading-relaxed text-[17px]">
+                                Need your accounting system set up? Learn financial best practice and prime your
+                                business for the next stage of growth. We get you moving quickly with an accounting
+                                solution that does what you need.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex items-end h-32">
+                            <img src="./images/rocket-medium.png" alt="Medium rocket">
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Scale up</h3>
+                            <p class="text-gray-700 leading-relaxed text-[17px]">
+                                Spend less time worrying about your finances and more time shaping your company's
+                                future. Get your bookkeeping, R&D credits and CFO problems, solved.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex items-end h-32">
+                            <img src="./images/rocket-large.png" alt="Large rocket">
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-gray-900">High growth</h3>
+                            <p class="text-gray-700 leading-relaxed text-[17px]">
+                                Gain the financial accuracy, visibility, and real-time analysis you need to make smarter
+                                decisions, drive efficiency, and achieve total organizational alignment.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="max-w-[1320px] mx-auto px-6 py-24 border-t border-gray-100">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-24">
+
+                <div class="lg:w-1/4">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+                        Join 200+ amazing companies
+                    </h2>
+                </div>
+
+                <div class="lg:w-3/4 w-full">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 items-center justify-items-center">
+                        <img src="./images/Frame.png" alt="Frizzenti">
+                        <img src="./images/Frame (1).png" alt="Remy">
+                        <img src="./images/Frame (2).png" alt="Feel">
+
+                        <img src="./images/Frame (3).png" alt="Manyone">
+                        <img src="./images/Frame (4).png" alt="Olio">
+                        <img src="./images/Frame (5).png" alt="Buffer">
+
+                        <img src="./images/Frame (6).png" alt="Beam">
+                        <img src="./images/Frame (7).png" alt="Fuel Ventures">
+                        <img src="./images/Frame (8).png" alt="Chaser">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section
+            class="max-w-[1320px] mx-auto px-6 py-24 flex flex-col lg:flex-row items-center justify-between gap-16">
+
+            <div class="flex-1 space-y-8">
+                <h2 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                    The AC Hub
+                </h2>
+
+                <p class="text-xl text-gray-600 max-w-md leading-relaxed">
+                    Explore our dedicated online resources. We've got the tips, tricks and online accounting know-how
+                    for business success.
+                </p>
+
+                <div class="pt-4">
+                    <button
+                        class="bg-[#f3b5ba] text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-[#ef9da5] transition-all shadow-sm">
+                        View Hub
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex-1 relative h-[400px] w-full max-w-[500px]">
+                <img src="./images/hubs.png" alt="hub resources"
+                    class="w-full h-full object-cover rounded-lg shadow-lg">
+            </div>
+
+        </section>
+        <section class="max-w-[1320px] mx-auto px-6 py-20">
+            <div
+                class="bg-[#8fd3d3] rounded-[32px] p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-8">
+
+                <div class="space-y-4">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                        Ready to Switch? It's simple.
+                    </h2>
+                    <p class="text-xl text-gray-800 font-medium">
+                        Speak to an expert today
+                    </p>
+                </div>
+
+                <div class="flex-shrink-0">
+                    <button
+                        class="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 shadow-xl">
+                        Get Started
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+<footer class="bg-[#2d2e3e] text-white py-20">
+    <div class="max-w-[1320px] mx-auto px-6">
+        
+        <div class="flex items-center gap-4 mb-16">
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                <span class="text-[#2d2e3e] font-bold italic text-xl">a</span>
+            </div>
+            <span class="text-2xl font-semibold">Your new finance team</span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 mb-20">
+            
+            <div class="space-y-6">
+                <h4 class="font-bold text-lg">How it works</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Hassle Free Switching</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="font-bold text-lg">What we do</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Finance Teams</a></li>
+                    <li><a href="#" class="hover:text-white transition">Tax</a></li>
+                    <li><a href="#" class="hover:text-white transition">R&D Tax Credits</a></li>
+                    <li><a href="#" class="hover:text-white transition">A platform for success</a></li>
+                    <li><a href="#" class="hover:text-white transition">Software Integrations</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="font-bold text-lg">Who we help</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Startups</a></li>
+                    <li><a href="#" class="hover:text-white transition">Small Business</a></li>
+                    <li><a href="#" class="hover:text-white transition">Medium Business</a></li>
+                    <li><a href="#" class="hover:text-white transition">CFO & Head of Finance</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="font-bold text-lg">Resources</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Case Studies</a></li>
+                    <li><a href="#" class="hover:text-white transition">Blogs</a></li>
+                    <li><a href="#" class="hover:text-white transition">Guides</a></li>
+                    <li><a href="#" class="hover:text-white transition">Podcasts</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="font-bold text-lg">Company</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pt-10 border-t border-gray-700 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10">
+            
+            <div class="space-y-6">
+                <h4 class="font-bold text-lg text-white">Speak to us</h4>
+                <div class="space-y-2 text-gray-400">
+                    <p>Call 020 4530 8432</p>
+                    <p>Refer a friend for £175</p>
+                    <p>Partner with us</p>
+                </div>
+                
+                <div class="flex flex-wrap gap-8 text-sm text-gray-500 pt-10">
+                    <p>© Accountancy Cloud 2021</p>
+                    <a href="#" class="hover:text-white">Privacy Policy & Cookies</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class=" p-4 rounded-sm self-end">
+                <img src="./images/Frame (9).png" alt="ACCA"  >
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
